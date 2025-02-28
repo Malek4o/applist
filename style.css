@@ -1,0 +1,75 @@
+/* Import Fonturi */
+@import url('https: //fonts.googleapis.com/css2?family=Montserrat: wght@300;700&display=swap');
+
+@import url('https: //fonts.googleapis.com/css2?family=Raleway: wght@400;800&display=swap');
+/* Resetare Globală */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	background-image: url("paper.gif");
+  }
+
+body {
+	background: #131418;
+	color: #999;
+	text-align: center;
+  }
+  .mycooldiv {
+	width: 400px;
+	height: 300px;
+	margin: 2% auto;
+	border-radius: 100%;
+  }
+  .red {
+	background: red
+  }
+  .blue {
+	background: blue
+  }
+  .yellow {
+	background: yellow
+  }
+  .green {
+	background: green
+  }
+  #darken {
+	box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+	/*darkness level control - change the alpha value for the color for darken/ligheter effect */
+  }
+.games-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 25px;
+	animation: fadeInUp 1s ease-out;
+}
+
+
+.game-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-bottom: 2px solid var(--primary-color);
+}
+
+.game-info {
+	padding: 20px;
+}
+
+.game-info h2 {
+	color: var(--text-color);
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.game-info p {
+	color: var(--accent-color);
+	font-size: 14px;
+	opacity: 0.8;
+}
